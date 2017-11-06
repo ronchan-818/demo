@@ -21,28 +21,51 @@ html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 html,body{width:100%; height: 100%; overflow: hidden;}
 body{background:#000; font-family: "PingFang TC" ,"儷黑 Pro", "Microsoft JhengHei", "微軟正黑體", STHeiti,"Heiti TC Medium", Apple LiGothic, Helvetica, Helvetica Neue, Arial,"PMingLiu", "新細明體";}
 
-.slide{
+.slide, .slide2, .slide3, .slide4{
   position: absolute;
   top:0;
   left:50%;
   margin-left: calc(-50vh * 0.5625);
   width:calc(100vh * 0.5625);
   height:100vh;
-  background-image: url(opening-screen-012.png);
-  background-size: cover;
-
-  animation: slide 4500ms steps(1, start) 1;
+  
+  visibility: visible;
+}
+.slide{
+  animation: slide 4500ms 1;
   animation-delay: 500ms;
   animation-fill-mode: forwards;
-
+  z-index: 4;
+}
+.slide2{
+  animation: slide2 4500ms 1;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+.slide3{
+  animation: slide3 4500ms 1;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+.slide4{
+  z-index: 1;
 }
 @keyframes slide {
-	0%{background-position: 0% 0;}
-	15%{background-position: 25% 0;}
-	50%{background-position: 50% 0;}
-	85%{background-position: 75% 0;}
-	100%{background-position: 75% 0;}
-	100%{background-position: 100% 0;}
+	0%{visibility: visible;}
+	15%{visibility:hidden;}
+	100%{visibility:hidden;}
+}
+@keyframes slide2 {
+	0%{visibility: visible;}
+	30%{visibility:hidden;}
+	100%{visibility:hidden;}
+}
+@keyframes slide3 {
+	0%{visibility: visible;}
+	50%{visibility:hidden;}
+	100%{visibility:hidden;}
 }
 
 
@@ -73,8 +96,11 @@ body{background:#000; font-family: "PingFang TC" ,"儷黑 Pro", "Microsoft Jheng
 
 <body>
 	<div class="iframe">
-	<div class="skip">略過</div>
-	<div class="slide"></div>
+	<div class="skip">略過1</div>
+	<div class="slide"><img src="opening_screen04-01.png"></div>
+	<div class="slide2"><img src="opening_screen04-02.png"></div>
+	<div class="slide3"><img src="opening_screen04-03.png"></div>
+	<div class="slide4"><img src="opening_screen04-04.png"></div>
 	</div>
 </body>
 </html>
