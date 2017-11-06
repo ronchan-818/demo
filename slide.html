@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<title>slide</title>
+
+<style type="text/css">
+/* default */
+*{margin:0; padding:0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;}
+ul{list-style:none;}
+a, img{text-decoration:none; border:none;}
+img{border:0; vertical-align:top; width:100%; height: auto;}
+.unselect{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-o-user-select: none;user-select: none;}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+.clearfix::after{display:block;content:"";clear:both;}
+
+html,body{width:100%; height: 100%; overflow: hidden;}
+body{background:#000; font-family: "PingFang TC" ,"儷黑 Pro", "Microsoft JhengHei", "微軟正黑體", STHeiti,"Heiti TC Medium", Apple LiGothic, Helvetica, Helvetica Neue, Arial,"PMingLiu", "新細明體";}
+
+.slide{
+  position: absolute;
+  top:0;
+  left:50%;
+  margin-left: calc(-50vh * 0.5625);
+  width:calc(100vh * 0.5625);
+  height:100vh;
+  background-image: url(opening-screen-01.png);
+  background-size: cover;
+
+  animation: slide 4500ms steps(1, start) 1;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+
+}
+@keyframes slide {
+	0%{background-position: 0% 0;}
+	15%{background-position: 33.333% 0;}
+	50%{background-position: 66.666% 0;}
+	85%{background-position: 100% 0;}
+	100%{background-position: 100% 0;}
+}
+
+
+.skip{
+	color:rgba(255,255,255,0.9);
+	font-size:10pt;
+	padding:4px 14px 4px 15px;
+	background:rgba(0,0,0,0.35);
+	border-radius: 12px;
+	text-align: center;
+	position: absolute;
+	z-index: 99;
+	right:5px;
+	top:7px;
+	letter-spacing: 2px;
+}
+
+.iframe{
+	/*width:320px;
+	height: 548px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;*/
+}
+</style>
+
+</head>
+
+<body>
+	<div class="iframe">
+	<div class="skip">略過</div>
+	<div class="slide"></div>
+	</div>
+</body>
+</html>
