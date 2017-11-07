@@ -20,38 +20,135 @@
 
 <style>
 html {
-cursor: url(http://mapi.appledaily.com.hk/images/blank.png), default;
+	width:100%;
+	height:100%;
+	/*cursor: url(http://mapi.appledaily.com.hk/images/blank.png), default;*/
 }
 body {
-margin: 0;
-padding: 0;
-background-image: url(http://mapi.appledaily.com.hk/images/billboard/bg.jpg);
-width: 100%;
-height: 1920px;
-background-repeat: no-repeat;
-background-position: center top;
-overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	background: url(bg.jpg) center top no-repeat;
+	width: 100%;
+	height: 100%;
+	overflow-y: hidden;
+	background-size: cover;
+	font-size: 16px/26px;
 }
 body::-webkit-scrollbar { width: 0 !important }
 
+
+#underTesting{
+	position: fixed;
+	z-index: 9;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display: none;
+}
+
+#nextdigital-logo{
+	text-align: center;
+	padding:12vw 8vw 0;
+}
+#nextdigital-logo img{
+	width:55vw;
+	height:auto;
+	max-width: 580px;
+}
+
+#apple_logo{
+	font-size:6vw;
+	color:#fdff6f;
+	text-align: center;
+	padding: 8vw;
+}
+#apple_logo img{
+	max-width: 150px;
+	width:15vw;
+	height: auto;
+}
+.shadow{
+	text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+}
+
+.slider_item{
+	padding:4vw 8vw;
+	text-align: right;
+}
+.slider_item .item{
+	padding:4vw 0 8vw;
+}
+.slider_item .item #title1{
+	color:#fdff6f;
+	font-size:8vw;
+}
+.slider_item .item #stat1{
+	color:#fdff6f;
+	font-size:15vw;
+}
+.slider_item .item #title2{
+	color:#fff;
+	font-size:8vw;
+}
+.slider_item .item #stat2{
+	color:#fff;
+	font-size:15vw;
+}
 @media all and (orientation:landscape) {
+	body{
+		background:#24a2ca url(bg_landscape.jpg) center top;
+		background-size:100% auto;
+	}
+	#nextdigital-logo{
+		padding: 6vh 8vh 0;
+	}
+	#nextdigital-logo img {
+	    width: 39vh;
+	    height: auto;
+	    max-width: 360px;
+	}
+	#apple_logo {
+	    font-size: 4.5vh;
+	    color: #fdff6f;
+	    text-align: center;
+	    padding: 4vh 8vh;
+	}
+	#apple_logo img{
+		width:13vh;
+	}
+	#slides{
+		max-width:80vh;
+		margin:0 auto;
+	}
+	.slider_item{
+		padding:0 8vh;
+	}
+	.slider_item .item{
+		padding:0 0 5vh;
+	}
+	.slider_item .item #title1, .slider_item .item #title2{font-size: 5vh;}
+	.slider_item .item #stat1, .slider_item .item #stat2{font-size: 12vh;}
+
 }
 </style>
 </head>
 <body>
-
+<div id="nextdigital-logo">
+	<img src="nextdigital_logo_for_board.png" />
+</div>
 <div id="apple_logo">
 	<img src="http://billboard.apple.nextmedia.com/images/billboard/logo.png"/>
-	<span id="slide_1_title">動新聞<span>、</span>即時新聞及文章</span>
+	<span id="slide_1_title" class="shadow">動新聞<span>、</span>即時新聞及文章</span>
 </div>
 <div id="slides">
 	<div class="slider_item">
-		<div class="item">
+		<div class="item shadow">
 		<div id="title1">今日點擊 ()</div>
 		<div id="stat1">&nbsp;</div>
 		</div>
 
-		<div class="item">
+		<div class="item shadow">
 		<div id="title2">昨日總點擊</div>
 		<div id="stat2">&nbsp;</div>
 		</div>
