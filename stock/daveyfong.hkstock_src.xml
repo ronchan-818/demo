@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<hkstock>
+  <source>
+    <SourceStockReal>http://money18.on.cc/js/real/hk/quote/%1$05d_r.js?t=</SourceStockReal>
+    <SourceStockRealRef>http://money18.on.cc/info/liveinfo_quote.html?symbol=%1$05d</SourceStockRealRef>
+    <SourceStockBasic>http://money18.on.cc/js/daily/hk/quote/%1$05d_d.js?t=</SourceStockBasic>
+    <SourceStockDetailsGraph>http://money18.on.cc/chart/d1/img/s_w_%1$05d.jpg?t=</SourceStockDetailsGraph>
+    <SourceStockNewsList>http://money18.on.cc/finance/xml/stockList/%1$05d_NCNEWS.lst?t=</SourceStockNewsList>
+    <SourceStockNewsDetails>http://money18.on.cc/ncnews/js/%1$s/%2$s.js</SourceStockNewsDetails>
+    <SourceIndexReal>http://money18.on.cc/js/real/hk/index/%1$s_r.js?t=</SourceIndexReal>
+    <SourceIndexRealRef>http://money18.on.cc/info/liveinfo_idx.html</SourceIndexRealRef>
+    <SourceIndexBasic>http://money18.on.cc/js/daily/hk/index/%1$s_d.js?t=</SourceIndexBasic>
+    <SourceWorldIndex>http://money18.on.cc/js/daily/worldidx/worldidx_b.js?t=</SourceWorldIndex>
+    <SourceStockGraph1Day>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=20&amp;type=1&amp;</SourceStockGraph1Day>
+    <SourceStockGraph3Days>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;titlestyle=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=5112&amp;type=1&amp;</SourceStockGraph3Days>
+    <SourceStockGraph10Days>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;titlestyle=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=24&amp;type=1&amp;</SourceStockGraph10Days>
+    <SourceStockGraph1Month>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;titlestyle=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=45&amp;type=1&amp;</SourceStockGraph1Month>
+    <SourceStockGraph3Months>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;titlestyle=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=47&amp;type=1&amp;</SourceStockGraph3Months>
+    <SourceStockGraph1Year>http://charts.aastocks.com/servlet/Charts?fontsize=12&amp;15MinDelay=T&amp;lang=1&amp;titlestyle=1&amp;vol=1&amp;Indicator=1&amp;ndpara1=10&amp;indpara2=20&amp;indpara3=50&amp;indpara4=100&amp;indpara5=150&amp;scheme=3&amp;com=100&amp;chartwidth=595&amp;chartheight=480&amp;stockid=%1$06d.HK&amp;period=49&amp;type=1&amp;</SourceStockGraph1Year>
+  </source>
+</hkstock>
